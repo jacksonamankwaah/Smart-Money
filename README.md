@@ -1,12 +1,34 @@
-# React + Vite
+# 💰 Smart Money – Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Smart Money is a **daily, weekly, and monthly expense tracker** that helps users record their **income and expenses** and calculate their **final balance** at the end of each period.  
+This project was built as part of my **Front-End Web Development Capstone Project**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features (MVP)
 
-## Expanding the ESLint configuration
+- ✅ Add income and expenses
+- ✅ Display expenses and income history
+- ✅ View balance (daily, weekly, monthly)
+- ✅ Responsive UI with clean layout
+- ✅ Simple navigation between periods
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Upcoming Features
+
+- 🔒 User login/signup (with dummy API or Firebase)
+- 💾 Local storage / API integration for saving data
+- 📊 Charts & graphs for better visualization
+- 🌙 Dark mode for improved accessibility
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** [React](https://reactjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons/Logo:** Custom icon design
+- **Version Control:** Git & GitHub
+
+---
