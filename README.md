@@ -1,33 +1,12 @@
-# 💰 Smart Money - Expense Tracker
+# React + Vite
 
-Smart Money is a simple and intuitive expense tracking web app designed to help users manage their **daily, weekly, and monthly income & expenses**. The app calculates balances automatically and provides a clear overview of personal finances.  
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This project is my **capstone project** for [ALX Frontend Engineering](https://www.alxafrica.com/).
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## ✨ Features
+## Expanding the ESLint configuration
 
-- 📅 Track **daily, weekly, and monthly expenses & income**  
-- ➕ Add new expense or income entries  
-- 🧾 View summary of income, expenses, and final balance  
-- 🔍 Filter and search for specific expenses  
-- 💾 Save and load data using **LocalStorage** and **SessionStorage**  
-- 📤 Import/Export data in **JSON format**  
-- 🌐 Sync with a mock API (using JSONPlaceholder) to simulate real-world server interaction  
-- 📱 Responsive UI with clean design  
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** HTML, CSS (Tailwind), JavaScript  
-- **Frameworks/Libraries (Optional):** React.js  
-- **Storage:** LocalStorage & SessionStorage  
-- **Mock API:** JSONPlaceholder  
-
----
-
-## 📂 Project Structure (planned)
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
