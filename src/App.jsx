@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
-function App() {
-  const [count, setCount] = useState(0)
+import AppShell from "./components/AppShell";
+import WelcomeScreen from "./screens/WelcomeScreen";
+import RegisterScreen from "./screens/RegisterScreen";
+import LoginScreen from "./screens/LoginScreen";
+import DashboardScreen from "./screens/DashboardScreen";
+import CategoriesScreen from "./screens/CategoriesScreen";
+
+export const COLORS = {
+  blue: "#5CD3FA",
+  green: "#A1DC4D",
+  orange: "#EB7E1F",
+  teal: "#93E4E3",
+  dark: "#0B1324",
+};
+
+export default function App() {
+  const [screen, setScreen] = useState("welcome");
+  const go = (name) => setScreen(name);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <AppShell>
+      <AnimatePresence mode="wait">
+        {screen === "welcome" && (
+          <motion.div key="welcome" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            <WelcomeScreen go={go} COLORS={COLORS} />
+          </motion.div>
+        )}
+        {screen === "register" && <RegisterScreen go={go} COLORS={COLORS} />}
+        {screen === "login" && <LoginScreen go={go} COLORS={COLORS} />}
+        {screen === "dashboard" && <DashboardScreen go={go} COLORS={COLORS} />}
+        {screen === "categories" && <CategoriesScreen go={go} COLORS={COLORS} />}
+      </AnimatePresence>
+    </AppShell>
+  );
 }
-
-export default App
