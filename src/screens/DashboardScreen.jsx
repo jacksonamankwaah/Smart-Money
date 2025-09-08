@@ -19,6 +19,7 @@ export default function DashboardScreen({ go, COLORS }) {
       </div>
 
       <div className="mt-6 grid grid-cols-2 gap-3">
+        
         <Card>
           <p className="text-xs uppercase text-slate-500">Total</p>
           <p className="text-xl font-bold">₵ 4,250</p>
